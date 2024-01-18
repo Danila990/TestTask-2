@@ -6529,7 +6529,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055dfe897f275764491496c97fbe884f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _miniGame: {fileID: 0}
   _basketFruit: {fileID: 873547377}
   _playerMover: {fileID: 1898493565}
   inputSwipe: {fileID: 334282222}

@@ -11,7 +11,6 @@ namespace Code.ZenjectInstallers
 {
     public class GameInstaller : MonoInstaller
     {
-        [SerializeField] private MiniGame _miniGame;
         [SerializeField] private BasketFruit _basketFruit;
         [SerializeField] private PlayerMover _playerMover;
         [SerializeField] private InputSwipe inputSwipe;
@@ -23,8 +22,6 @@ namespace Code.ZenjectInstallers
     
         public override void InstallBindings()
         {
-            Container.Bind<MiniGame>().FromInstance(_miniGame).AsSingle().NonLazy();
-            
             Container.Bind<BasketFruit>().FromInstance(_basketFruit).AsSingle().NonLazy();
             
             Container.Bind<PlayerMover>().FromInstance(_playerMover).AsSingle().NonLazy();

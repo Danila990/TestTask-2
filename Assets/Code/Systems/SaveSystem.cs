@@ -2,7 +2,7 @@
 using System.IO;
 using UnityEngine;
 
-namespace Code
+namespace Code.Systems
 {
     public class SaveSystem : MonoBehaviour
     {

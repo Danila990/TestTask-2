@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Code
+namespace Code.Systems
 {
     public class LoadSystem : MonoBehaviour
     {
