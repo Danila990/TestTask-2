@@ -42,7 +42,7 @@ namespace Code.UI.MiniGame
         
         public void ButtonImageClick(MiniGameImage miniGameImage)
         {
-            if (CheckDuplicate(miniGameImage._image) || _resultImages.Count > 3) return;
+            if (CheckDuplicate(miniGameImage._image) || _resultImages.Count >= 3) return;
 
             miniGameImage.OpenSprite();
             _resultImages.Add(miniGameImage._image);

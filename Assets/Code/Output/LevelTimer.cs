@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Code.Manager;
 using Code.Systems;
 using TMPro;
@@ -55,9 +56,9 @@ namespace Code.Output
             while (_timeRemaining > 0)
             {
                 yield return new WaitUntil(() => _gameManager._isPlayGame);
-                yield return new WaitForSeconds(1f);
                 _timeRemaining--;
                 UpdateTimerText();
+                yield return new WaitForSeconds(1f);
             }
             
             UpdateTimerText();
